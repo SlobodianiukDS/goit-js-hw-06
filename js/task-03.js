@@ -22,6 +22,6 @@ const markup = images
   })
   .join("");
 
-console.log(markup);
+// console.log(markup);
 
-gallery.innerHTML = markup;
+gallery.insertAdjacentHTML(`beforeend`, markup);

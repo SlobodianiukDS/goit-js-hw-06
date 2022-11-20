@@ -5,7 +5,7 @@ textInput.addEventListener(`blur`, validTextInput);
 function validTextInput() {
   textInput.classList.remove(`validation-invalid`);
   textInput.classList.remove(`validation-valid`);
-  if (textInput.selectionEnd !== 6) {
+  if (textInput.selectionEnd !== textInput.dataset.length) {
     textInput.classList.add(`validation-invalid`);
     return;
   }
